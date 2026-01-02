@@ -40,56 +40,6 @@ body {
     opacity: 0.7;
     z-index: -1;
   }
-/*   
-  header {
-    background-color: #ff7b00;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-  } */
-  
-  main{
-    padding: 40px 20px;
-    text-align: center;
-    flex: 1;
-  }
-
-  .btu{
-    padding: 20px;
-    background-color: var(--primary-color);
-    border-radius: 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-
-  .btu:hover{
-    background-color: #e66800cc;
-    transform: scale
-  }
-
-  .btu h1{
-    text-shadow: 2px 2px 4px #000000;
-
-  }
-
-  .btu p {
-    text-shadow: 2px 2px 4px #000000;
-    color: #e0e0e0;
-    margin-bottom: 20px;
-  }
-  
-  .button-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
- a {
-    color: white;
-    text-decoration: none;
-  }
 
   footer {
     background-color: var(--primary-color);
@@ -97,13 +47,4 @@ body {
     font-size: 0.9em;
     color: #777;
     padding: 15px;
-   
   }
-  
-  @media (max-width: 768px) {
-    .button-grid {
-      grid-template-columns: 1fr;
-      padding: 0 10px;
-    }
-  }
-  

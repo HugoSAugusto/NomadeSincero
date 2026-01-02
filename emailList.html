@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nomade Sincero — Lista Privada</title>
+  <meta name="description" content="Aprenda copywriting e vendas com quem vive disso. Entre para a lista privada do Nomade.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="imag/favicon/nomade.icon" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-gray-100">
+
+<main class="max-w-3xl mx-auto px-6 py-20">
+
+  <h1 class="text-3xl md:text-5xl font-extrabold mb-10 text-center">
+    Meu nome é <span class="text-emerald-400">Yan</span>, conhecido como <span class="text-emerald-400">Nômade</span>.
+  </h1>
+
+  <p class="text-lg text-gray-300 mb-6 text-center">
+    Antes de virar YouTuber, eu já ganhava dinheiro suficiente para viajar o mundo apenas escrevendo textos que vendem.
+  </p>
+
+  <p class="text-xl font-semibold text-center mb-12">
+    Fiz isso <span class="text-emerald-400">sem aparecer</span>, apenas escrevendo textos que convertem.
+  </p>
+
+  <!-- CTA BOX -->
+  <div class="bg-slate-800 rounded-3xl p-10 text-center shadow-xl mb-20">
+    <p class="text-xl text-emerald-400 font-semibold mb-4">
+      Inscreva-se na minha lista privada
+    </p>
+
+    <p class="text-gray-300 mb-6">
+      Receba emails gratuitos sobre vendas, copywriting e liberdade financeira.
+    </p>
+
+    <form id="leadForm" class="space-y-4">
+      <input type="email" placeholder="Seu melhor email"
+        class="w-full p-4 rounded-xl bg-slate-900 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+
+      <label class="flex items-center text-sm text-gray-400">
+        <input type="checkbox" class="mr-2">
+        Aceito a política de privacidade
+      </label>
+
+      <button class="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-bold py-4 rounded-xl transition">
+        ENTRAR NA LISTA
+      </button>
+    </form>
+  </div>
+
+  <section class="space-y-8 text-gray-300 leading-relaxed">
+
+    <h2 class="text-3xl font-bold text-white text-center">
+      Se você ainda não entendeu nada, eu vou explicar.
+    </h2>
+
+    <p>
+      Copywriting é a arte de escrever textos persuasivos para fazer alguém tomar uma ação. Eu já vendi produtos, serviços
+      e até ideias usando apenas palavras.
+    </p>
+
+    <p>
+      Eu comecei em 2019 quebrado. Sem dinheiro, sem direção. Comecei a estudar marketing, criar sites, aprender tráfego
+      pago e, principalmente, copywriting.
+    </p>
+
+    <p>
+      Depois de errar muito, descobri a coisa mais importante: não importa o produto. Se você sabe vender, você ganha dinheiro.
+    </p>
+
+    <p class="text-emerald-400 font-semibold text-xl">
+      Nós persuadimos desde que nascemos. Copywriting não é técnica, é sobrevivência.
+    </p>
+
+  </section>
+
+  <!-- CTA FINAL -->
+  <div class="bg-slate-800 rounded-3xl p-10 text-center shadow-xl mt-20">
+    <p class="text-xl font-semibold text-emerald-400 mb-4">
+      Entre para minha lista privada agora
+    </p>
+
+    <p class="text-gray-300 mb-6">
+      É grátis. Você pode sair quando quiser.
+    </p>
+
+    <form id="leadForm" class="space-y-4">
+      <input type="email" placeholder="Seu melhor email"
+        class="w-full p-4 rounded-xl bg-slate-900 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+
+      <button class="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-bold py-4 rounded-xl transition">
+        ENTRAR NA LISTA
+      </button>
+    </form>
+  </div>
+</main>
+
+<div id="emailPopup" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+  <div class="bg-slate-900 p-10 rounded-3xl max-w-md w-full text-center shadow-2xl">
+
+    <h2 class="text-2xl font-bold text-emerald-400 mb-4">
+      Quase lá!
+    </h2>
+
+    <p class="text-gray-300 mb-6">
+      Enviamos um email para você.  
+      <span class="text-white font-semibold">Confirme sua inscrição na sua caixa de entrada.</span>
+    </p>
+
+    <div class="space-y-3">
+      <a href="https://mail.google.com" target="_blank"
+        class="block bg-emerald-500 text-black font-bold py-3 rounded-xl hover:bg-emerald-600">
+        Abrir Gmail
+      </a>
+
+      <a href="https://outlook.live.com/mail/" target="_blank"
+        class="block bg-blue-500 text-white font-bold py-3 rounded-xl hover:bg-blue-600">
+        Abrir Outlook
+      </a>
+
+      <a href="https://mail.yahoo.com" target="_blank"
+        class="block bg-purple-500 text-white font-bold py-3 rounded-xl hover:bg-purple-600">
+        Abrir Yahoo
+      </a>
+    </div>
+
+    <button id="closePopup"
+      class="mt-6 text-gray-400 hover:text-white text-sm">
+      Vou confirmar depois
+    </button>
+
+  </div>
+</div>
+
+<script>
+    const form = document.getElementById("leadForm");
+    const popup = document.getElementById("emailPopup");
+    const closeBtn = document.getElementById("closePopup");
+
+    form.addEventListener("submit", function(e){
+        e.preventDefault();
+        popup.classList.remove("hidden");
+        popup.classList.add("flex");
+    });
+
+    closeBtn.addEventListener("click", function(){
+        popup.classList.add("hidden");
+    });
+</script>
+
+</body>
+</html>
